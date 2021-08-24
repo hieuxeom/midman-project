@@ -1,0 +1,270 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    color: var(--mainColor);
+    font-family: var(--fontSub);
+}
+
+.left-side {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    flex:1;
+}
+
+.left-side .text-container {
+    text-align: center;
+}
+.left-side .text-container h1 {
+    font-size: 110px;
+    font-family: var(--fontSub);
+    text-transform: uppercase;
+}
+
+.left-side .text-container p {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: var(--fontSub);
+    text-transform: uppercase;
+    color: var(--subColor);
+    margin: 15px 0;
+}
+
+.left-side .form-container {
+    /* box-shadow: 0 0 10px rgba(0, 132, 255, 0.75); */
+    box-shadow: var(--shadow75);
+    /* border: 1px solid #000; */
+    border-radius: 40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding: 40px 50px;
+    min-width: 400px;
+    margin: 50px;
+}
+
+.left-side .form-container h2 {
+    font-size: 50px;
+    font-family: var(--fontSub);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.left-side .form-container .label-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form-container .label-input .label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+.form-container .label-input .input {
+    line-height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border:none;
+    box-shadow:var(--shadow75);
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: var(--mainColor);
+    font-weight: bold;
+}
+
+.form-container a.forgot-pass {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    color: var(--subColor2)
+}
+
+.form-container button.submit {
+    width: 100%;
+    border:none;
+    background-color: var(--mainColor);
+    color: #fff;
+    line-height: 40px;
+    border-radius: 10px;
+    box-shadow: var(--shadow75);
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-container span button {
+    color: var(--mainColor);
+    text-decoration: underline;
+    font-size: 16px;
+    border:none;
+    background: transparent;
+    font-family: var(--fontSub);
+    font-weight: bold;
+}
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side img {
+    width: 70%;
+}
+
+.signup-modal {
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontSub);
+    color: var(--mainColor);
+}
+
+.hide-modal {
+    display: none !important;
+}
+
+.signup-modal .form-container{
+    padding: 30px 50px;
+    background: #fff;
+    min-width: 800px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    border-radius: 40px;
+    box-shadow: var(--shadow75);
+    position: relative;
+    animation: showModal .2s ;
+}
+
+.signup-modal .form-container .closeBtn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    border:none;
+    background: none;
+    color: var(--mainColor);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.signup-modal .form-container h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.signup-modal .form-container .form {
+    width: 100%;
+    margin: 15px 0;
+}
+.signup-modal .form-container .form-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-row .label-input {
+    margin: 0 20px;
+    width: 100%;
+}
+.signup-modal .form-container button.submit {
+    width: 50%;
+}
+
+@media screen and (max-width:1600px) {
+    .left-side .text-container h1 {
+        font-size: 95px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .left-side .text-container h1 {
+        font-size: 70px;
+    }
+    .left-side .text-container p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .left-side .text-container h1 {
+        font-size: 100px;
+    }
+    .left-side .text-container p {
+        font-size: 25px;
+    }
+    .right-side img {
+        width: 40%;
+    }
+    .signup-modal .form-container {
+        min-width: 700px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .wrapper {
+        width: 100%;
+    }
+    .left-side .text-container h1 {
+        font-size: 50px;
+        margin: 5px 0;
+    }
+    .left-side .text-container p {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    .left-side .form-container {
+        margin: 30px 0 ;
+        padding: 20px 20px;
+        min-width: 300px;
+    }
+    .left-side .form-container h2 {
+        font-size: 30px;
+    }
+    .right-side img {
+        width: 50%;
+    }
+    .signup-modal {
+        height: 100%;
+    }
+    .signup-modal .form-container {
+        margin: auto 30px;
+        min-width: 350px;
+        padding: 10px 10px;
+    }
+    .signup-modal .form-container h2 {
+        font-size: 30px;
+    }
+    .form-row .label-input {
+        margin: 0 10px;
+    }
+    .form-row .label-input .input {
+        line-height: 30px;
+    }
+}
+
+
+
+
+
+
+@keyframes showModal {
+  from {
+      transform: translateY(-300px)
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.css">
+    <title>MidMan Project</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left-side">
+            <div class="text-container">
+                <h1>midman service</h1>
+                <p>dịch vụ midman - giao dịch trung gian uy tín số 1 việt nam</p>
+                <p>uy tín - nhanh chóng - tiện lợi</p>
+            </div>
+            <div class="form-container">
+                <h2>Login</h2>
+                <div class="label-input">
+                    <label for="email" class="label">Email</label>
+                    <input type="email" id="email" class="input">
+                </div>
+                <div class="label-input">
+                    <label for="password" class="label">Password</label>
+                    <input type="password" id="password" class="input">
+                </div>
+                <a href="#" class="forgot-pass">Forgot password?</a>
+                <button class="submit">Login</button>
+                <p>Don't have account? <span><button onclick="showModal()">Signup</button></span></p>
+            </div>
+        </div>
+        <div class="right-side">
+            <img src="./assets/images/home.png" alt="">
+        </div>
+    </div>
+    <div id = "modal" class="signup-modal hide-modal">
+        <div class="form-container">
+            <button class="closeBtn" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <h2>Signup</h2>
+            <div class="form">
+                <div class="form-row">
+                    <div class="label-input">
+                        <label for="fname" class="label">Username</label>
+                        <input type="text" id="username" class="input">
+                    </div>
+                    <div class="label-input">
+                        <label for="lname" class="label">Email</label>
+                        <input type="email" id="email" class="input">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="label-input">
+                        <label for="fname" class="label">Full Name</label>
+                        <input type="text" id="fname" class="input">
+                    </div>
+                    <div class="label-input">
+                        <label for="lname" class="label">Last Name</label>
+                        <input type="text" id="lname" class="input">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="label-input">
+                        <label for="fname" class="label">Password</label>
+                        <input type="password" id="fname" class="input">
+                    </div>
+                    <div class="label-input">
+                        <label for="lname" class="label">Re-Password</label>
+                        <input type="password" id="lname" class="input">
+                    </div>
+                </div>
+            </div>
+            <button class="submit">Signup</button>
+        </div>
+    </div>
+    <script>
+        function closeModal() {
+            var x  = document.getElementById("modal");
+            x.classList.add("hide-modal");
+        }
+        function showModal() {
+            var x = document.getElementById("modal");
+            x.classList.remove("hide-modal")
+        }
+    </script>
+</body>
+</html>
