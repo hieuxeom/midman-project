@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap');
 
 html,
 body,
@@ -154,8 +154,9 @@ input:focus {
 :root {
   --fontMain: 'Quicksand', sans-serif;
   --fontSub : 'Roboto Condensed', sans-serif;
-  --shadow75: 0 0 10px rgba(0, 132, 255, 0.75);
-  --shadow50: 0 0 10px rgba(0, 132, 255, 0.5);
+  --shadow225: 2px 2px 5px rgba(0, 132, 255, 0.5);
+  --shadow75: 0 0 5px rgba(0, 132, 255, 0.75);
+  --shadow50: 0 0 5px rgba(0, 132, 255, 0.5);
   --shadow44: 4px 4px 20px rgba(0, 132, 255, 0.75);
   --mainColor: #0084FF;
   --subColor: #FF0000;

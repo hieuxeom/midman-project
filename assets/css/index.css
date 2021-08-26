@@ -73,8 +73,9 @@
     box-shadow:var(--shadow75);
     margin-bottom: 15px;
     font-size: 15px;
-    color: var(--mainColor);
+    /* color: var(--mainColor); */
     font-weight: bold;
+    padding: 0 16px;
 }
 
 .form-container a.forgot-pass {
@@ -106,6 +107,7 @@
     background: transparent;
     font-family: var(--fontSub);
     font-weight: bold;
+    cursor: pointer;
 }
 .right-side {
     flex: 1;
