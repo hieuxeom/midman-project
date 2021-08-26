@@ -1,89 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.css">
-    <title>MidMan Project</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./assets/css/index.css" />
+	<title>MidMan Project</title>
 </head>
+
 <body>
-    <div class="wrapper">
-        <div class="left-side">
-            <div class="text-container">
-                <h1>midman service</h1>
-                <p>dịch vụ midman - giao dịch trung gian uy tín số 1 việt nam</p>
-                <p>uy tín - nhanh chóng - tiện lợi</p>
-            </div>
-            <div class="form-container">
-                <h2>Login</h2>
-                <div class="label-input">
-                    <label for="email" class="label">Email</label>
-                    <input type="email" id="email" class="input">
-                </div>
-                <div class="label-input">
-                    <label for="password" class="label">Password</label>
-                    <input type="password" id="password" class="input">
-                </div>
-                <a href="#" class="forgot-pass">Forgot password?</a>
-                <button class="submit">Login</button>
-                <p>Don't have account? <span><button onclick="showModal()">Signup</button></span></p>
-            </div>
-        </div>
-        <div class="right-side">
-            <img src="./assets/images/home.png" alt="">
-        </div>
-    </div>
-    <div id = "modal" class="signup-modal hide-modal">
-        <div class="form-container">
-            <button class="closeBtn" onclick="closeModal()"><i class="fas fa-times"></i></button>
-            <h2>Signup</h2>
-            <div class="form">
-                <div class="form-row">
-                    <div class="label-input">
-                        <label for="fname" class="label">Username</label>
-                        <input type="text" id="username" class="input">
-                    </div>
-                    <div class="label-input">
-                        <label for="lname" class="label">Email</label>
-                        <input type="email" id="email" class="input">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="label-input">
-                        <label for="fname" class="label">First Name</label>
-                        <input type="text" id="fname" class="input">
-                    </div>
-                    <div class="label-input">
-                        <label for="lname" class="label">Last Name</label>
-                        <input type="text" id="lname" class="input">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="label-input">
-                        <label for="fname" class="label">Password</label>
-                        <input type="password" id="fname" class="input">
-                    </div>
-                    <div class="label-input">
-                        <label for="lname" class="label">Re-Password</label>
-                        <input type="password" id="lname" class="input">
-                    </div>
-                </div>
-            </div>
-            <button class="submit">Signup</button>
-        </div>
-    </div>
-    <script>
-        function closeModal() {
-            var x  = document.getElementById("modal");
-            x.classList.add("hide-modal");
-        }
-        function showModal() {
-            var x = document.getElementById("modal");
-            x.classList.remove("hide-modal")
-        }
-    </script>
+	<div class="container">
+		<div class="forms-container">
+			<div class="signin-signup">
+				<form action="#" class="sign-in-form">
+					<h2 class="title">Sign in</h2>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="Username" />
+					</div>
+					<div class="input-field">
+						<i class="fas fa-lock"></i>
+						<input type="password" placeholder="Password" />
+					</div>
+					<button type="submit" class="btn solid">Login</button>
+				</form>
+				<form action="#" class="sign-up-form">
+					<h2 class="title">Sign up</h2>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="Full Name" />
+					</div>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="Username" />
+					</div>
+					<div class="input-field">
+						<i class="fas fa-envelope"></i>
+						<input type="email" placeholder="Email" />
+					</div>
+					<div class="input-field">
+						<i class="fas fa-lock"></i>
+						<input type="password" placeholder="Password" />
+					</div>
+					<div class="input-field">
+						<i class="fas fa-lock"></i>
+						<input type="password" placeholder="Re-Password" />
+					</div>
+					<button type="submit" class="btn solid">Signup</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="panels-container">
+			<div class="panel left-panel">
+				<div class="content">
+					<h3>New here ?</h3>
+					<p>
+						Sign up to try intermediary service the most reputable, fast and secure!
+					</p>
+					<button class="btn transparent" id="sign-up-btn">
+						Sign up
+					</button>
+				</div>
+				<img src="./assets/images/log.svg" class="image" alt="" />
+			</div>
+			<div class="panel right-panel">
+				<div class="content">
+					<h3>Already have an account?</h3>
+					<p></p>
+					<button class="btn transparent" id="sign-in-btn">
+						Sign in
+					</button>
+				</div>
+				<img src="./assets/images/register.svg" class="image" alt="" />
+			</div>
+		</div>
+	</div>
+
+	<script src="./assets/scripts/app.js"></script>
 </body>
+
 </html>

@@ -72,7 +72,7 @@
     box-shadow:var(--shadow75);
     margin-bottom: 15px;
     font-size: 15px;
-    color: var(--mainColor);
+    padding: 0 10px;
 }
 
 button.submit-button {
