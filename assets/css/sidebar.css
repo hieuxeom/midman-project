@@ -124,13 +124,9 @@
   background: #fff;
   color: var(--mainColor);
 }
-.sidebar.open .bx-search:hover{
-  background: #1d1b31;
-  color: #ccc;
-}
 .sidebar .bx-search:hover{
   background: #FFF;
-  background: var(--mainColor);
+  color: #1d1b31;
 }
 .sidebar li a{
   display: flex;
@@ -242,7 +238,11 @@
   font-weight: 500;
   margin: 18px
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
+  .sidebar {
+    width: 60px;
+    padding: 5px;
+  }
   .sidebar li .tooltip{
     display: none;
   }

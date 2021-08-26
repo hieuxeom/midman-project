@@ -6,12 +6,8 @@
     min-height: 100vh;
 }
 #content #transaction {
-    margin-left: 78px;
     width: 100%;
-    /* height: max-content; */
-    /* min-height: 100vh; */
-    padding: 40px;
-    
+    padding-left: 78px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,4 +45,22 @@
 #transaction .transaction-container p.status span.failed {
     color: rgb(212, 0, 0);
     padding: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    #content #transaction {
+        padding-left: 60px;
+    }
+    #content #transaction .transaction-container{
+        width: 90%;
+    }
+    #transaction .transaction-container .header p.title {
+        font-size: 30px;
+    }
+    #transaction .transaction-container .header p.time {
+        font-size: 16px;
+    }
+    #transaction .transaction-container p.status {
+        font-size: 16px;
+    }
 }
