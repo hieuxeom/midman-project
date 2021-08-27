@@ -5,7 +5,8 @@
 #content {
     min-width: 100%;
     min-height: 100vh;
-    background: rgb(250, 250, 250);
+    background: rgba(242,246,254,255);
+    padding-left: 78px;
 }
 #content .content-container {
     min-height: 100vh;
@@ -13,4 +14,113 @@
     align-items:center;
     justify-content:center;
     flex-direction:column;
+}
+#content .content-container .hello-box {
+    height: 10vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    width: 100%;
+}
+.content-container .hello-box p,h2 {
+    display: block;
+    width: 100%;
+    padding: 0 40px;
+}
+#content .content-container .content-box {
+    height:90vh;
+    display: flex;
+    width: 100%;
+}
+.content-container .content-box .main-content {
+    flex: 3;
+    padding: 40px;
+}
+.content-box .main-content .details-list {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: var(--shadow02);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-content .details-list .total-box {
+    padding: 20px 40px;
+    flex: 1;
+}
+.main-content .details-list .total-box:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.main-content .details-list .total-box p.title {
+    margin: 10px 0;
+}
+.main-content .details-list .total-box h1 {
+    font-size: 40px;
+}
+.main-content .details-list .total-box p.desc {
+    margin: 10px 0;
+}
+.details-list .total-box p span.up {
+    color: #00bd00;
+}
+.details-list .total-box p span.down {
+    color: #d40000;
+}
+
+
+.content-container .content-box .sub-content {
+    flex: 1;
+    padding: 40px;
+    padding-top: 0;
+}
+.content-box .sub-content .top-board {
+    height: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: var(--shadow02);
+    padding: 20px;
+}
+.sub-content .top-board h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.sub-content .top-board .user {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    box-shadow: var(--shadow02);
+    border-radius: 15px;
+    padding: 10px;
+}
+.sub-content .top-board .user img {
+    width: 60px;
+}
+.sub-content .top-board .user-info {
+    margin-left: 15px;
+}
+.top-board .user .user-info .name {
+    font-size: 20px;
+    
+}
+.top-board .user .user-info .sales {
+    font-size: 14px;
+    color: #aaa;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+i.top1 {
+    color: rgb(255, 255, 0);
+    height: 100%;
+}
+i.top2 {
+    color: rgb(165, 165, 165);
+    height: 100%;
+}
+i.top3 {
+    color: rgb(255, 123, 0);
+    height: 100%;
 }

@@ -6,7 +6,7 @@
 #content {
     min-width: 100%;
     min-height: 100vh;
-    background: rgb(245, 245, 245);
+    background:rgba(242,246,254,255);
     margin-left: 78px;
     color: var(--mainColor);
 }
@@ -86,6 +86,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 
 button.submit-button {
     width: 200px;

@@ -2,16 +2,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #efefef;
+    background: rgba(242,246,254,255);
     min-height: 100vh;
 }
 #content #transaction {
     width: 100%;
+    min-height: 100vh;
     padding-left: 78px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
+}
+
+#transaction .button-box {
+    width: 100%;
+    padding-left: 20px;
+}
+button.submit-button {
+    width: 200px;
+    border:none;
+    background-color: var(--mainColor);
+    color: #fff;
+    line-height: 40px;
+    border-radius: 10px;
+    box-shadow: var(--shadow75);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
 #transaction .transaction-container {
