@@ -1,70 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/css/reset.css">
-	<link rel="stylesheet" href="./assets/css/overview.css">
-	<link rel="stylesheet" href="./assets/css/sidebar.css">
-	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.css">
-	<link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
-	<title>MidMan Project</title>
-</head>
-
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="assets/css/overview.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-	<div id="wrapper">
-		<div class="sidebar-container">
-			<div class="sidebar">
-				<div class="logo-details">
-					<i class='bx bx-code icon'></i>
-					<div class="logo_name">MidMan</div>
-					<i class='bx bx-menu' id="btn"></i>
-				</div>
-				<ul class="nav-list">
-					<li>
-						  <i class='bx bx-search' ></i>
-						 <input type="text" placeholder="Search...">
-						 <span class="tooltip">Search</span>
-					  </li>
-					<li>
-						<a href="overview.html">
-							<i class='bx bx-grid-alt'></i>
-							<span class="links_name">Dashboard</span>
-						</a>
-						<span class="tooltip">Dashboard</span>
-					</li>
-					<li>
-						<a href="profile.html">
-							<i class='bx bx-user'></i>
-							<span class="links_name">Profile</span>
-						</a>
-						<span class="tooltip">Profile</span>
-					</li>
-					<li>
-						<a href="transaction.html">
-							<i class='bx bx-dollar-circle'></i>
-							<span class="links_name">Transaction</span>
-						</a>
-						<span class="tooltip">Transaction</span>
-					</li>
-					<li>
-						<a href="setting.html">
-							<i class='bx bx-cog'></i>
-							<span class="links_name">Setting</span>
-						</a>
-						<span class="tooltip">Setting</span>
-					</li>
-					<li>
-						<a href="#">
-							<i class='bx bx-log-out'></i>
-							<span class="links_name">LogOut</span>
-						</a>
-						<span class="tooltip">Logout</span>
-					</li>
-				</ul>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bx-code icon'></i>
+        <div class="logo_name">MIDMAN</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="#">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Profile</span>
+       </a>
+       <span class="tooltip">Profile</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-money' ></i>
+         <span class="links_name">Transaction</span>
+       </a>
+       <span class="tooltip">Transaction</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+	 <li>
+		<a href="#">
+		  <i class='bx bx-log-out' ></i>
+		  <span class="links_name">Logout</span>
+		</a>
+		<span class="tooltip">Logout</span>
+	  </li>
+    </ul>
+  </div>
+  <section class="home-section">
+	<div id="content">
+		<section class="content-container" id="dashboard">
+			<div class="hello-box">
+				<p>Welcome Back,</p>
+				<h2>Tran Ngoc Hieu</h2>
 			</div>
+<<<<<<< HEAD
 		</div>
 		<div id="content">
 			<section class="content-container" id="dashboard">
@@ -73,22 +75,78 @@
 		</div>
 	</div>
 
+=======
+			<div class="content-box">
+				<div class="main-content">
+					<div class="details-list">
+						<div class="total-box">
+							<p class="title">Total Transaction Amount</p>
+							<h1>100,000,000</h1>
+							<p class="desc"><span class="up"><ion-icon name="trending-up-outline"></ion-icon> 4%</span> from last month</p>
+						</div>
+						<div class="total-box">
+							<p class="title">Total Transaction Success</p>
+							<h1>100,000,000</h1>
+							<p class="desc"><span class="up"><ion-icon name="trending-up-outline"></ion-icon> 4%</span> from last month</p>
+						</div>
+						<div class="total-box">
+							<p class="title">Total Transaction Fail</p>
+							<h1>100,000,000</h1>
+							<p class="desc"><span class="down"><ion-icon name="trending-down-outline"></ion-icon> 4%</span> from last month</p>
+						</div>
+					</div>
+				</div>
+				<div class="sub-content">
+					<div class="top-board">
+						<h2>TOP 10 USER</h2>
+						<div class="user">
+							<img src="./assets/images/avatar.png" alt="">
+							<div class="user-info">
+								<p class="name">Tran Ngoc Hieu <i class="far fa-crown top1"></i></p>
+								<p class="sales">100,000,000 VNĐ</p>
+							</div>
+						</div>
+						<div class="user">
+							<div class="user-image">
+								<img src="./assets/images/avatar.png" alt="">
+							</div>
+							<div class="user-info">
+								<p class="name">Tran Ngoc Hieu <i class="far fa-crown top2"></i></p>
+								<p class="sales">100,000,000 VNĐ</p>
+							</div>
+						</div>
+						<div class="user">
+							<div class="user-image">
+								<img src="./assets/images/avatar.png" alt="">
+							</div>
+							<div class="user-info">
+								<p class="name">Tran Ngoc Hieu <i class="far fa-crown top3"></i></p>
+								<p class="sales">100,000,000 VNĐ</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+  </section>
+  <script>
+>>>>>>> aa512d2d77c5e6dfbefcf52814ccf4c198ac0d9d
 
-	<script>
-		let sidebar = document.querySelector(".sidebar");
-		let closeBtn = document.querySelector("#btn");
-		let searchBtn = document.querySelector(".bx-search");
+	  
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
 
-		closeBtn.addEventListener("click", () => {
-			sidebar.classList.toggle("open");
-			menuBtnChange();//calling the function(optional)
-		});
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
 
-		searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
-			sidebar.classList.toggle("open");
-			menuBtnChange(); //calling the function(optional)
-		});
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
 
+<<<<<<< HEAD
 		// following are the code to change sidebar button(optional)
 		function menuBtnChange() {
 			if (sidebar.classList.contains("open")) {
@@ -98,6 +156,16 @@
 			}
 		}
 	</script>
+=======
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+>>>>>>> aa512d2d77c5e6dfbefcf52814ccf4c198ac0d9d
 </body>
-
 </html>
