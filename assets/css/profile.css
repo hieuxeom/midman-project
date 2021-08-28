@@ -2,15 +2,13 @@
     display: flex;
     flex-direction: row;
 }
-
-#content {
+.home-section {
     min-width: 100%;
     min-height: 100vh;
-    background: rgb(245, 245, 245);
-    margin-left: 78px;
+    background: rgba(242,246,254,255);
     color: var(--mainColor);
 }
-#content .content-container {
+.home-section .content-container {
     min-height: 100vh;
     display:flex;
     align-items:center;
@@ -20,7 +18,7 @@
 
 /* PROFILE CSS */
 
-#content section#profile {
+.home-section section#profile {
     padding: 40px 40px;
 }
 #profile .avatar-info, 
@@ -41,7 +39,7 @@
     color: var(--subColor);
     font-weight: bold;
 }
-#content section#profile img.profile-avatar {
+.home-section section#profile img.profile-avatar {
     width: 250px;
     border-radius: 50%;
 }
@@ -112,22 +110,23 @@ button.submit-button {
 }
 
 @media screen and (max-width: 769px) {
-    #wrapper #content .content-container {
+    #wrapper .home-section .content-container {
         padding: 0;
         width: auto;
     }
 }
 @media screen and (max-width: 500px) {
-    #content {
-        margin-left: 0;
-        padding-left: 60px;
-    }
-    #wrapper #content .content-container {
+    #wrapper .home-section .content-container {
         padding: 0;
-        width: auto;
     }
-    #content #profile .avatar-info img.profile-avatar {
-        width: 200px;
+    #wrapper #profile {
+        width: calc(100% - 60px);
+    }
+    .home-section #profile .avatar-info img.profile-avatar {
+        width: 150px;
+    }
+    #profile .row {
+        flex-direction: column;
     }
     #profile .row .label-input {
         margin: 0;

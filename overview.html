@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
-    <link rel="stylesheet" href="assets/css/overview.css">
-    <!-- Boxicons CDN Link -->
+    <link rel="stylesheet" href="./assets/css/overview.css">
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/sidebar.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -23,28 +23,28 @@
          <span class="tooltip">Search</span>
       </li>
       <li>
-        <a href="#">
+        <a href="overview.html">
           <i class='bx bx-grid-alt'></i>
           <span class="links_name">Dashboard</span>
         </a>
          <span class="tooltip">Dashboard</span>
       </li>
       <li>
-       <a href="#">
+       <a href="profile.html">
          <i class='bx bx-user' ></i>
          <span class="links_name">Profile</span>
        </a>
        <span class="tooltip">Profile</span>
      </li>
      <li>
-       <a href="#">
+       <a href="transaction.html">
          <i class='bx bx-money' ></i>
          <span class="links_name">Transaction</span>
        </a>
        <span class="tooltip">Transaction</span>
      </li>
      <li>
-       <a href="#">
+       <a href="setting.html">
          <i class='bx bx-cog' ></i>
          <span class="links_name">Setting</span>
        </a>
@@ -66,16 +66,6 @@
 				<p>Welcome Back,</p>
 				<h2>Tran Ngoc Hieu</h2>
 			</div>
-<<<<<<< HEAD
-		</div>
-		<div id="content">
-			<section class="content-container" id="dashboard">
-				
-			</section>
-		</div>
-	</div>
-
-=======
 			<div class="content-box">
 				<div class="main-content">
 					<div class="details-list">
@@ -129,7 +119,6 @@
 			</div>
   </section>
   <script>
->>>>>>> aa512d2d77c5e6dfbefcf52814ccf4c198ac0d9d
 
 	  
   let sidebar = document.querySelector(".sidebar");
@@ -146,17 +135,6 @@
     menuBtnChange(); //calling the function(optional)
   });
 
-<<<<<<< HEAD
-		// following are the code to change sidebar button(optional)
-		function menuBtnChange() {
-			if (sidebar.classList.contains("open")) {
-				closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
-			} else {
-				closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
-			}
-		}
-	</script>
-=======
   // following are the code to change sidebar button(optional)
   function menuBtnChange() {
    if(sidebar.classList.contains("open")){
@@ -166,6 +144,5 @@
    }
   }
   </script>
->>>>>>> aa512d2d77c5e6dfbefcf52814ccf4c198ac0d9d
 </body>
 </html>
